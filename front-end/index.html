@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon appli Fullstack</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <form method="post">
+        <label id="labelUsername" for="inputUsername">Username</label>
+        <input id="inputUsername" type="text" placeholder="Votre Username"/>
+        <label id="labelPassword" for="inputPassword">Mot de passe</label>
+        <input id="inputPassword" type="password" placeholder="Votre mot de passe"/>
+        <input id="sendButton" onclick="envoyerData()" value="Envoyer">
+        <input id="checkButton" onclick="getUsers()" value="Voir les users">
+    </form>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+<script src="main.js"></script>
+</html>
